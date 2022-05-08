@@ -1,4 +1,4 @@
-version: "3.9"
+version: '3.9'
 services:
   app:
     build:
@@ -9,5 +9,4 @@ services:
     command: npm run dev
     tty: true
     ports:
-      - "3000:3000"
-
+      - '3000:3000'

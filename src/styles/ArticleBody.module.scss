@@ -1,0 +1,26 @@
+.article {
+  & > h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  & > h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  & > h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  & > h4,
+  h5,
+  h6 {
+    font-size: 16px;
+  }
+  a {
+    color: #3182ce;
+    text-decoration: underline;
+  }
+  ul {
+    list-style: inside;
+  }
+}

@@ -1,6 +1,7 @@
 import { ParsedUrlQuery } from 'querystring'
 import { GetStaticProps } from 'next'
 import type { Article } from '../../types/article'
+import { ArticleBody } from '@/components/ArticleBody'
 import { getAllArticles, getArticleById } from '@/lib/api'
 
 type Props = {
@@ -33,12 +34,7 @@ export default function Article({ article }: Props) {
               </div>
             </div>
           )}
-          <div
-            className='mt-2'
-            dangerouslySetInnerHTML={{
-              __html: article.body,
-            }}
-          ></div>
+          <ArticleBody body={article.body} />
         </div>
       </div>
     </div>
